@@ -1,0 +1,42 @@
+% vim:fileencoding=utf-8:foldmethod=marker
+
+\documentclass[legalpaper,12pt]{article}
+
+\input{packages}
+\input{settings}
+\input{macros}
+
+\sloppy
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\input{section/intro}
+
+\section{Syntactic elements of language}
+\input{section/charset}
+\input{section/ident}
+\input{section/opsymbols}
+\input{section/keyreserved}
+\input{section/noise}
+\input{section/comments}
+\input{section/blanks-delimiters}
+\input{section/expressions}
+
+\subsection{Statements}
+\input{section/vardec}
+\input{section/iostatements}
+\input{section/assignstatements}
+\input{section/condstatements}
+\input{section/iterstatements}
+\input{section/funcstatements}
+
+
+
+
+
+% \bibliography{refs}
+
+\end{document}

@@ -1,0 +1,119 @@
+\subsection{Operation Symbols}
+\subsubsection{Assignment operations}
+\begin{itemize}
+\item ASSIGNMENT\_OPERATION = \{ \cd{=, +=, -=, /=, \%=} \}
+\end{itemize}
+
+\begin{center}
+\begin{tabulary}{\linewidth}{|C|C|C|}
+  \hline
+  \bd{Assignment Operation} & \bd{Example operation} & \bd{Description} \\
+  \hline
+  \hline
+  \cd{=} & \cd{x = 3} & Assigns value to a variable \\
+  \hline
+  \cd{+=} & \cd{x += 3} & A shorter way of writing the statement: \cd{x = x + y} \\
+  \hline
+  \cd{-=} & \cd{x -= 3} & A shorter way of writing the statement: \cd{x = x - y} \\
+  \hline
+  \cd{*=} & \cd{x *= 3} & A shorter way of writing the statement: \cd{x = x * y} \\
+  \hline
+  \cd{/=} & \cd{x /= 3} & A shorter way of writing the statement: \cd{x = x / y} \\
+  \hline
+  \cd{\%=} & \cd{x \%= 3} & A shorter way of writing the statement: \cd{x = x \% y} \\
+  \hline
+\end{tabulary}
+\end{center}
+
+\subsubsection{Arithmetic Operations}
+
+\begin{itemize}
+  \item ARITHMETIC\_OPERATION = \{ \cd{+, -, *, /, //, \%, \^{}} \}
+\end{itemize}
+
+\begin{center}
+\begin{tabulary}{\linewidth}{|C|C|C|}
+  \hline
+  \bd{Arithmetic Operation \qquad} & \bd{Example Operation \qquad} & \bd{Description} \\
+  \hline
+  \hline
+  \cd{+} & \cd{x + y} & Returns the sum of \cd{x} and \cd{y}.\\
+  \hline
+  \cd{-} & \cd{x - y} & Returns the difference between \cd{x} and \cd{y}. \\
+  \hline
+  \cd{*} & \cd{x * y} & Returns the product of \cd{x} and \cd{y}. \\
+  \hline
+  \cd{/} & \cd{x / y} & Division operation. Returns the quotient of \cd{x} and \cd{y} in a floating-point type. \\
+  \hline
+  \cd{//} & \cd{x // y} & Integer division returns the quotient of \cd{x} and \cd{y} that was passed to a floor function. Floor function rounds down the input to the nearest integer. \\
+  \hline
+  \cd{\%} & \cd{x \% y} & Modulo returns the remainder of \cd{x} when divided by \cd{y}. \\
+  \hline
+  \cd{\^{}} & \cd{x \^{} y} & Exponentiation multiplies \cd{x} to itself \cd{y} times. \\
+  \hline
+\end{tabulary}
+\end{center}
+
+\subsubsection{Unary operations}
+\begin{center}
+\begin{tabulary}{\linewidth}{|C|C|C|}
+  \hline
+  \bd{Unary Operation} & \bd{Example Operation} & \bd{Description} \\
+  \hline
+  \hline
+  \cd{+} & \cd{+x} & Indicates that the variable is positive. \\
+  \hline
+  \cd{-} & \cd{-x} & Indicates that the variable is negative. \\
+  \hline
+  \cd{++} & \cd{++x} or \cd{x++} & Increase the value of the variable by 1. \\
+  \hline
+  \cd{--} & \cd{--x} or \cd{x--} & Decreases the value of the variable by 1.\\
+  \hline
+\end{tabulary}
+\end{center}
+
+\subsubsection{Boolean Operation}
+\begin{itemize}
+  \item LOGICAL\_OPERATION = \{ \cd{\&\&, ||, !} \}
+\end{itemize}
+
+\begin{center}
+\begin{tabulary}{\linewidth}{|C|C|C|}
+  \hline
+  \bd{Logical Boolean Operation} & \bd{Example Expression} & \bd{Description} \\
+  \hline
+  \hline
+  \cd{\&\&} & \cd{x < 10 \&\& x > 5} & Returns ``true'' if both statements are true.\\
+  \hline
+  \cd{||} & \cd{x < 10 || x > 5} & Returns ``true'' if one of the statements is true.\\
+  \hline
+  \cd{!} & \cd{!(x < 10)} & Negates the value of the expression.\\
+  \hline
+\end{tabulary}
+\end{center}
+
+\subsubsection{Relational Operation}
+\begin{itemize}
+  \item RELATIONAL\_OPERATION = \{ \cd{ <, >, <=, >=, ==, != } \}
+\end{itemize}
+
+\begin{center}
+\begin{tabulary}{\linewidth}{|C|C|C|}
+  \hline
+  \bd{Relational Operation} & \bd{Example Operation} & \bd{Description} \\
+  \hline
+  \hline
+  \cd{<} & \cd{x < y} & Returns \cd{true} if the left operand is less than the right operand. \\
+  \hline
+  \cd{>} & \cd{x > y} & Returns \cd{true} if the left operand is greater than the right operand. \\
+  \hline
+  \cd{<=} & \cd{x <= y} & Returns \cd{true} if the left operand is less than or equal to the right operand.\\
+  \hline
+  \cd{>=} & \cd{x >= y} & Returns \cd{true} if the left operand is greater than or equal to the right operand.\\
+  \hline
+  \cd{==} & \cd{x == y} & Returns \cd{true} if both operands are equal.\\
+  \hline
+  \cd{!=} & \cd{x != y} & Returns \cd{true} if left operand is not equal to the right operand.\\
+  \hline
+\end{tabulary}
+\end{center}

@@ -1,0 +1,15 @@
+\subsubsection{Functions}
+The general syntax for defining a function is:
+\begin{minted}{text}
+Define <IDENT> [<param1>, <param2>, ..., <paramN>] [<body>]
+\end{minted}
+\bd{Example:}
+\begin{minted}{text}
+-* Factorial of number n *-
+Define factorial [n] [
+    When [n == 1] [
+        BackToDecember n;
+    ]
+    BackToDecember n + factorial[n - 1]
+]
+\end{minted}

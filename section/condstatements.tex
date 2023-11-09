@@ -1,0 +1,54 @@
+\subsubsection{Conditional Statements}
+
+The general syntax for conditional statements:
+\begin{minted}{text}
+-- If statement
+When [<condition>] [<body>]
+
+-- If-else statement
+When [<condition>] [<body>]
+ThatsWhen [<body>]
+
+-- With else--if statement
+When [<condition>] [<body>]
+Thats [<condition>] [<body>]
+ThatsWhen [<body>]
+\end{minted}
+\bd{Example 1:}
+\begin{minted}{text}
+-* Simple leap year checker *-
+year = 2023; result = bool;
+When [year % 4 == 0] [
+    When [year % 100 == 0] [
+        When [year % 400 == 0] [
+            result = The1;
+        ] ThatsWhen [
+             result = The0;
+        ]
+    ] ThatsWhen [
+        result = The1;
+    ]
+] ThatsWhen [
+    result = The0;
+]
+SpeakNow[result];
+\end{minted}
+Output:
+\begin{minted}{text}
+The0
+\end{minted}
+\bd{Example 2:}
+\begin{minted}{text}
+x = 5;
+When [x = 5] [
+    SpeakNow[“The value of the variable is 5”]
+] Thats [x > 5] [
+    SpeakNow[“The value of the variable is greater than 5”]
+] ThatsWhen [
+    SpeakNow[“The value of the variable is less than 5”]
+]
+\end{minted}
+Output:
+\begin{minted}{text}
+The value of the variable is 5
+\end{minted}

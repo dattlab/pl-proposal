@@ -1,0 +1,51 @@
+% vim:fileencoding=utf-8:foldmethod=marker
+
+
+% Title {{{
+\title{
+  \Huge{\textbf{TaylorScript}}
+}
+\author{
+Jamero, Emanuel\\
+Juat, Jan Maverick\\
+Marcellana, Nicole\\
+Medina, Jethro Noah\\
+Oandasan, John Nicolas\\
+Villanueva, Darylle\\
+}
+\date{\today}
+% }}}
+
+% Bibliography setup {{{
+\bibliographystyle{plainurl}
+\gappto{\UrlBreaks}{\UrlOrds}
+% }}}
+
+% hyperref settings {{{
+\hypersetup {
+  colorlinks,
+  citecolor=red,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=blue
+}
+% }}}
+
+% Including figures {{{
+\newcommand{\incfig}[2][1]{%
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+% }}}
+
+% \BeforeBeginEnvironment{align*}{\vspace{-15pt}}
+% \AfterEndEnvironment{align*}{\vspace{-15pt}}
+% }}}
+
+% Theorems, proofs, etc {{{
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+% }}}

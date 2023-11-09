@@ -1,0 +1,47 @@
+\subsubsection{Iterative Statements}
+Languages like Python or Java have two loops: \cd{for} loop for iterating within a given range and \cd{while} loop for continuous iteration \il{while} a given condition is true. TaylorScript combines these into one looping construct \cd{AllToWhile}:
+\begin{minted}{text}
+-- <header> : <initialization> ; <condition> ; <updation>
+AllToWhile [<header> | <condition>] [
+    <body>
+]
+\end{minted}
+\bd{Example 1:}
+\begin{minted}{text}
+AllToWhile [i = 0; i <= 10; ++i] [
+    When [i % 2 == 0] [
+        SpeakNow[i];
+    ]
+]
+\end{minted}
+Output:
+\begin{minted}{text}
+    0
+    2
+    4
+    6
+    8
+    10
+\end{minted}
+\bd{Example 2:}
+\begin{minted}{text}
+AllToWhile [x=0; x < 3; x++] [
+    SpeakNow[x];
+    AllToWhile [y=0; y < 3; y++] [
+        SpeakNow[y];
+    ]
+]
+\end{minted}
+Output:
+\begin{minted}{text}
+0
+0
+1
+2
+1
+0
+1
+2
+2
+0
+\end{minted}

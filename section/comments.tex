@@ -1,0 +1,27 @@
+\subsection{Comments}
+Single line comments starts with double dash (\cd{--}):
+\begin{minted}{text}
+-- This is an inline comment in TaylorScript
+-- Another inline comment
+\end{minted}
+
+Multi-line comments starts with \cd{-*} and ends with \cd{*-}.
+\begin{minted}{text}
+-* This
+ * is
+ * a multi-line
+   comment
+   in
+   TaylorScript
+*-
+\end{minted}
+
+Nesting multi-line comments results to an error.
+\begin{minted}{text}
+-* Parent comment starts
+ -* Nested multi-
+ *- line comment
+ ^ At this point, the program thinks
+   that the parent comment ends
+*- <- So this will cause error
+\end{minted}

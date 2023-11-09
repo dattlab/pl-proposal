@@ -1,0 +1,75 @@
+% vim:fileencoding=utf-8:foldmethod=marker
+
+
+% Number system notations {{{
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\Rp}{{\mathbb R}^{+}}
+\newcommand{\Rn}{{\mathbb R}^{-}}
+
+\newcommand{\Z}{{\mathbb Z}}
+\newcommand{\Zp}{{\mathbb Z}^{+}}
+\newcommand{\Zn}{{\mathbb Z}^{-}}
+
+\newcommand{\Q}{{\mathbb Q}}
+\newcommand{\Qp}{{\mathbb Q}^{+}}
+\newcommand{\Qn}{{\mathbb Q}^{-}}
+
+\newcommand{\N}{{\mathbb N}}
+% }}}
+
+
+
+% Markup {{{
+\newcommand{\il}[1]{\textit{#1}}
+\newcommand{\bd}[1]{\textbf{#1}}
+\newcommand{\ud}[1]{\underline{#1}}
+\newcommand{\st}[1]{\sout{#1}}
+\newcommand{\nin}{\noindent}
+\newcommand{\cd}[1]{\texttt{#1}}
+% }}}
+
+
+
+% Code block {{{
+\lstset{
+  basicstyle=\small\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+\setminted{
+  frame=lines,
+  framesep=1.5mm,
+  baselinestretch=1.2,
+  fontsize=\footnotesize,
+  % linenos,
+  breaklines,
+}
+% }}}
+
+
+
+% Change names {{{
+% \renewcommand{\abstractname}{ABSTRACT}
+\renewcommand{\contentsname}{Contents}
+%\renewcommand{\bibname}{References}
+%\renewcommand{\chaptername}{}
+\renewcommand{\partname}{}
+% \renewcommand{\listfigurename}{}
+% \renewcommand{\listtablename}{}
+% \renewcommand{\appendixname}{}
+% }}}
+
+
+
+% Misc {{{
+\newcommand{\tup}[2]{
+  & #1 \quad \text{\textbf{#2}} \\
+}
+\newcommand{\ctab}[1]{
+  \text{\textbf{create table} } &#1 \\
+  (
+}
+\newcommand{\kql}[1]{\text{\textbf{#1} }}
+%}}}

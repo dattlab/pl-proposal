@@ -1,0 +1,46 @@
+\subsection{Expressions}
+For expressions mathematical, boolean, and logical, TaylorScript follows the standard order of precedence in arithmetic, unary, and boolean expressions.
+
+\subsubsection{Mathematical expressions}
+\begin{center}
+\begin{tabulary}{\linewidth}{|C|C|C|C|}
+  \hline
+  \bd{Precedence \qquad\qquad\qquad} & \bd{Operator} & \bd{Description} & \bd{Associativity \qquad\qquad\qquad\qquad} \\
+  \hline
+  \hline
+  1 & \cd{++} & increment (postfix) & left-to-right \\
+                     & \cd{--} & decrement (postfix) & \\
+  \hline
+  2 & \cd{++} & increment (prefix) & right-to-left \\
+  & \cd{--} & decrement (prefix) & \\
+  & \cd{+} & unary plus & \\
+  & \cd{-} & unary minus & \\
+  \hline
+  3 & \cd{*, /, \%} & multiplication, division, modulo & left--to-right \\
+  \hline
+  4 & \cd{+, -} & addition, subtraction & left-to-right \\
+  \hline
+  5 & \cd{=, +=, -=, *=, /=, \%=} & assignment operator, plus-equals, minus-equals, times-equals, divide-equals, modulo-equals & right-to-left \\
+  \hline
+\end{tabulary}
+\end{center}
+
+\subsubsection{Boolean expressions}
+\begin{center}
+\begin{tabulary}{\linewidth}{|C|C|C|C|}
+  \hline
+  \bd{Precedence\qquad\qquad} & \bd{Operator\qquad\qquad} & \bd{Description} & \bd{Associativity\qquad\qquad} \\
+  \hline
+  \hline
+  1 & \cd{!} & logical NOT & rigth-to-left \\
+  \hline
+  2 & \cd{<, <=, >, >=} & less-than, less-than-or-equal, greater-than, greater-than-or-equal & left-to-right \\
+  \hline
+  3 & \cd{==, !=} & equals, not-equals & left-to-right \\
+  \hline
+  4 & \cd{\&\&} & logical \cd{AND} & left-to-right \\
+  \hline
+  5 & \cd{||} & logical \cd{OR} & left-to-right \\
+  \hline
+\end{tabulary}
+\end{center}
