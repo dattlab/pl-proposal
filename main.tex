@@ -1,6 +1,6 @@
 % vim:fileencoding=utf-8:foldmethod=marker
 
-\documentclass[legalpaper,12pt]{article}
+\documentclass[a4,12pt]{article}
 
 \input{packages}
 \input{settings}
@@ -9,8 +9,7 @@
 \sloppy
 \begin{document}
 \maketitle
-\tableofcontents
-\newpage
+% \tableofcontents
 
 \section{Introduction}
 \input{section/intro}
@@ -19,10 +18,10 @@
 \input{section/charset}
 \input{section/ident}
 \input{section/opsymbols}
-\input{section/keyreserved}
 \input{section/noise}
 \input{section/comments}
 \input{section/blanks-delimiters}
+\input{section/keyreserved}
 \input{section/expressions}
 
 \subsection{Statements}
@@ -31,10 +30,9 @@
 \input{section/assignstatements}
 \input{section/condstatements}
 \input{section/iterstatements}
+\input{section/switchstatements}
 \input{section/funcstatements}
-
-
-
+\input{section/excepthandlingstmts}
 
 
 % \bibliography{refs}

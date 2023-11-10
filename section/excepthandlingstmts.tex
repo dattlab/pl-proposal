@@ -1,0 +1,18 @@
+\subsubsection{Exception Handling}
+
+Here's the Taylor's version of \cd{try-catch}, a common construct for exception handling:
+\begin{minted}{text}
+GetAway [
+    <STATEMENTS>
+] Car [<EXCEPTION>] [
+    <STATEMENTS>
+]
+\end{minted}
+\bd{Example:}
+\begin{minted}{text}
+GetAway [
+    a = 51 / "a";
+] Car [TypeError] [
+    SpeakNow["That is not allowed."];
+]
+\end{minted}

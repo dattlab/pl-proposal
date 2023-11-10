@@ -1,9 +1,9 @@
 \subsection{Operation Symbols}
+
 \subsubsection{Assignment operations}
 \begin{itemize}
-\item ASSIGNMENT\_OPERATION = \{ \cd{=, +=, -=, /=, \%=} \}
+  \item ASSIGNMENT\_OPERATION = \{ \cd{ =, +=, -=, *=, /=, \%= } \}
 \end{itemize}
-
 \begin{center}
 \begin{tabulary}{\linewidth}{|C|C|C|}
   \hline
@@ -26,11 +26,9 @@
 \end{center}
 
 \subsubsection{Arithmetic Operations}
-
 \begin{itemize}
-  \item ARITHMETIC\_OPERATION = \{ \cd{+, -, *, /, //, \%, \^{}} \}
+  \item ARITHMETIC\_OPERATION = \{ \cd{ +, -, *, /, //, \%, \^{} } \}
 \end{itemize}
-
 \begin{center}
 \begin{tabulary}{\linewidth}{|C|C|C|}
   \hline
@@ -55,6 +53,9 @@
 \end{center}
 
 \subsubsection{Unary operations}
+\begin{itemize}
+  \item UNARY\_OPERATION = \{ \cd{ +, -, ++, {-}{-} } \}
+\end{itemize}
 \begin{center}
 \begin{tabulary}{\linewidth}{|C|C|C|}
   \hline
@@ -67,14 +68,14 @@
   \hline
   \cd{++} & \cd{++x} or \cd{x++} & Increase the value of the variable by 1. \\
   \hline
-  \cd{--} & \cd{--x} or \cd{x--} & Decreases the value of the variable by 1.\\
+  \cd{{-}{-}} & \cd{{-}{-}x} or \cd{x{-}{-}} & Decreases the value of the variable by 1.\\
   \hline
 \end{tabulary}
 \end{center}
 
 \subsubsection{Boolean Operation}
 \begin{itemize}
-  \item LOGICAL\_OPERATION = \{ \cd{\&\&, ||, !} \}
+  \item BOOLEAN\_OPERATION = \{ \cd{ \&\&, ||, ! } \}
 \end{itemize}
 
 \begin{center}
@@ -93,9 +94,9 @@
 \end{center}
 
 \subsubsection{Relational Operation}
-\begin{itemize}
-  \item RELATIONAL\_OPERATION = \{ \cd{ <, >, <=, >=, ==, != } \}
-\end{itemize}
+%\begin{itemize}
+%  \item RELATIONAL\_OPERATION = \{ \cd{ <, >, <=, >=, ==, != } \}
+%\end{itemize}
 
 \begin{center}
 \begin{tabulary}{\linewidth}{|C|C|C|}

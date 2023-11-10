@@ -1,9 +1,19 @@
 \subsubsection{Assignment Statements}
 ASSIGN\_OPRTR = \{\cd{=, +, -=, *=, /=, \%=}\}\\\\
-\noindent The syntax is the same with other common languages:
-\begin{minted}{text}
-<IDENT> <ASSIGN_OPRTR> <VALUE>
-\end{minted}
+\begin{center}
+  \begin{tabulary}{\linewidth}{|C|C|C|}
+    \hline
+    \bd{Syntax} & \bd{Definition} & \bd{Example} \\
+    \hline
+    \hline
+    \cd{<IDENT> <ASSIGN\_OPRTR> <VALUE>} & \bd{Assignment by value} stores the value in a given variable. & \cd{pi = 3.1415;} \\
+    \hline
+    \cd{<IDENT> <ASSIGN\_OPRTR> <IDENT>} & \bd{Assignment by variable} is a process of assigning the value of a variable to another variable. & \cd{a = 123;\qquad\qquad b = a;} \\
+    \hline
+    \cd{<IDENT> <ASSIGN\_OPRTR> <EXPR>} & \bd{Assignment by expression} stores the value of an expression in a variable. & \cd{area = pi * r\^{}2;} \\
+    \hline
+  \end{tabulary}
+\end{center}
 \bd{Example:}
 \begin{minted}{text}
 pi = 3.14; radius = 45;

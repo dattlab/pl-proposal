@@ -1,12 +1,25 @@
 \subsubsection{Input/Output Statements}
-Here's the overview of the syntax:
-\begin{minted}{text}
-<IDENT> = Store[];
-SpeakNow[<IDENT>] -- prints the content of <IDENT>
-\end{minted}
+%\begin{minted}{text}
+%<IDENT> = Mine[]; -- gets an input from user
+%SpeakNow[<IDENT>] -- prints the content of <IDENT>
+%\end{minted}
+
+\begin{center}
+  \begin{tabulary}{\linewidth}{|C|C|C|}
+    \hline
+    \bd{Syntax} & \bd{Definition} & \bd{Example} \\
+    \hline
+    \hline
+    \cd{Mine[<STRING>]}\qquad\qquad\qquad\qquad\qquad & Reads an input stream and returns its string equivalent. Its argument is either a string or empty. & \cd{a = Mine["N: "];\qquad{b = Mine[];}}\qquad\qquad\qquad \\
+    \hline
+    \cd{SpeakNow[<STRING>]}\qquad\qquad\qquad\qquad\qquad\qquad\qquad & Prints the given string argument in a console. & \cd{SpeakNow["Hello, World!"];} \\
+    \hline
+  \end{tabulary}
+\end{center}
+
 \bd{Example:}
 \begin{minted}{text}
-var = Store["Give some value: "];
+var = Mine["Give some value: "];
 SpeakNow[var * var];
 \end{minted}
 Output:

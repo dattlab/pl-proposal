@@ -1,0 +1,38 @@
+\subsubsection{Switch Statements}
+
+Below is the Taylor's version of switch statement. Every \cd{Dear-John} statements must have a \cd{Closure} part.
+\begin{minted}{text}
+Dear [<EXPRESSIONS>] [
+   John [<VALUE>] [
+       <STATEMENTS>
+   ]
+   John [<VALUE>] [
+       <STATEMENTS>
+   ]
+   .
+   .
+   .
+   Closure [
+       <STATEMENTS>
+   ]
+]
+\end{minted}
+\bd{Example:}
+\begin{minted}{text}
+c = 420 % 2;
+Dear [c] [
+    John [0] [
+        SpeakNow["420 is an even number."];
+    ]
+    John [1] [
+        SpeakNow["420 is an odd number."];
+    ]
+    Closure [
+        Breathe;
+    ]
+]
+\end{minted}
+Output:
+\begin{minted}{text}
+420 is an even number.
+\end{minted}
