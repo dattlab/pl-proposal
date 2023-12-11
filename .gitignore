@@ -1,1 +1,7 @@
+auto/
 build/
+_minted_main/
+*.aux
+*.log
+*.out
+*synctex*
